@@ -83,7 +83,7 @@ end
 
 function storeScore(oT, offT)
             -- Store record
-            local storedScores = io.open("datos.txt", "a")
+            local storedScores = io.open("data.txt", "a")
             scoreToSave =  "On target " .. oT .. "| Off target " .. offT .. "\n"
             storedScores:write(scoreToSave)
             storedScores:close()
